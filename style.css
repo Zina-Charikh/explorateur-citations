@@ -1,0 +1,211 @@
+/* ✅ Appliquer une image de fond */
+body {
+    background-image: url('back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ✅ Ajouter un effet de flou pour améliorer la lisibilité */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrit légèrement l'image */
+    z-index: -1;
+}
+
+/* ✅ Style général des citations */
+.quote-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* ✅ Style des auteurs */
+.quote-author {
+    color: #007bff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ✅ Conteneur du champ et du bouton */
+#filterContainer {
+    display: flex;
+    justify-content: center; /* ✅ Centre horizontalement */
+    align-items: center;
+    width: 90%; /* ✅ Rend le champ plus large */
+    max-width: 1100px; /* ✅ Ajuste pour ne pas être trop long */
+    margin: 30px auto; /* ✅ Espace autour */
+}
+
+/* ✅ Champ de recherche (Filtre) */
+#filterInput {
+    flex-grow: 1; /* ✅ Permet d'occuper plus d'espace */
+    padding: 18px 25px; /* ✅ Rend le champ plus grand */
+    font-size: 1.5em; /* ✅ Texte plus visible */
+    border: 2px solid #007bff;
+    border-radius: 12px 0 0 12px; /* ✅ Arrondi seulement à gauche */
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.95); /* ✅ Bonne visibilité */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* ✅ Utilise toute la largeur disponible */
+}
+
+/* ✅ Bouton Filtrer bien ajusté */
+#filterBtn {
+    padding: 18px 35px; /* ✅ Plus large pour s'harmoniser avec le champ */
+    font-size: 1.5em; /* ✅ Texte plus grand */
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    border-radius: 0 12px 12px 0; /* ✅ Arrondi seulement à droite */
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    white-space: nowrap; /* ✅ Évite que le texte du bouton déborde */
+}
+
+#filterBtn:hover {
+    background-color: #ffdd57;
+    color: black;
+}
+
+/* ✅ Grandir et centrer le bloc des citations */
+#all-quotes-container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* ✅ Espacer les citations */
+.quote-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    font-size: 1.4em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Agrandir le bloc du quiz */
+#quiz-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 60%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+}
+
+/* ✅ Instructions du quiz */
+#quiz-instruction {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ✅ Ajuster la citation du quiz */
+#quiz-quote {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ✅ Mettre chaque option du quiz sur une ligne différente */
+#quiz-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ✅ Style des boutons du quiz */
+.quiz-button {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 1.3em;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+.quiz-button:hover {
+    background-color: #ffdd57;
+    color: black;
+}
+
+/* ✅ Espacement du bouton "Suivant" */
+#nextQuizBtn {
+    margin-top: 20px;
+    font-size: 1.3em;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#nextQuizBtn:hover {
+    background-color: #ffdd57;
+    color: black;
+}
+
+/* ✅ Style des onglets */
+.navbar {
+    background: rgba(0, 0, 0, 0.8); /* ✅ Ajout d'un fond sombre */
+    padding: 10px;
+}
+
+.navbar-item {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white !important;
+    padding: 10px 15px;
+}
+
+.navbar-item:hover {
+    color: #ffdd57 !important;
+    background-color: transparent;
+}
+
+/* ✅ Centrer tout le contenu */
+.container {
+    text-align: center;
+}
+
+
+#about-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-section li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
