@@ -18,7 +18,7 @@ pip install fastapi uvicorn requests
 
 ### Lancer l’API FastAPI 
 ```bash
-uvicorn grobol:app --reload
+uvicorn main:app --reload
 ```
 L’API tourne maintenant sur **http://127.0.0.1:8000/**
 
